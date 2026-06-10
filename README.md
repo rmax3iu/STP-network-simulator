@@ -19,6 +19,9 @@
   Un simulateur de réseau local en C implémentant le protocole STP (Spanning Tree Protocol) et la commutation Ethernet, avec simulation de propagation de trames.
 </p>
 
+<!-- |-------------------------------------------------------------------------------------------| -->
+<!-- |                                       À PROPOS                                            | -->
+<!-- |-------------------------------------------------------------------------------------------| -->
 ## À propos du projet
 
 Ce simulateur permet de modéliser et de simuler le comportement d'un réseau local composé de stations et de commutateurs. Il a été réalisé dans le cadre d'un projet à l'IUT Robert Schuman.
@@ -32,58 +35,65 @@ Le simulateur implémente :
 - L'affichage des **tables de commutation** et de l'**état des ports STP**
 - La possibilité d'**activer ou désactiver le STP** en temps réel
 
+<!-- |-------------------------------------------------------------------------------------------| -->
+<!-- |                                        APERÇU                                             | -->
+<!-- |-------------------------------------------------------------------------------------------| -->
 ## 📸 Aperçu
 
 **Menu principal** : Interface de démarrage du simulateur avec les 6 options disponibles.
 
 <div align="center">
-<img src="assets/menu.png" alt="Menu principal" width="700"/>
+<img src="assets/menu.png" alt="Menu principal" width="600"/>
 </div>
 <br>
 
 **Stations disponibles** : Liste des stations du réseau avec leur adresse MAC et IP.
 
 <div align="center">
-<img src="assets/stations.png" alt="Stations disponibles" width="700"/>
+<img src="assets/stations.png" alt="Stations disponibles" width="600"/>
 </div>
 <br>
 
 **Simulation d'une trame** : Propagation tick par tick d'une trame Ethernet dans le réseau.
 
 <div align="center">
-<img src="assets/simulation.png" alt="Simulation d'une trame" width="700"/>
+<img src="assets/simulation.png" alt="Simulation d'une trame" width="600"/>
 </div>
 <br>
 
 **État des ports STP** : Affichage de l'état de chaque port après convergence du protocole STP.
 
 <div align="center">
-<img src="assets/stp_ports.png" alt="État des ports STP" width="500"/>
+<img src="assets/stp_ports.png" alt="État des ports STP" width="400"/>
 </div>
 <br>
 
 **Matrice d'adjacence** : Visualisation de la topologie du réseau et des coûts des liens.
 
 <div align="center">
-<img src="assets/matrice.png" alt="Matrice d'adjacence" width="500"/>
+<img src="assets/matrice.png" alt="Matrice d'adjacence" width="400"/>
 </div>
 <br>
 
 **Tables de commutation** : Tables MAC apprises dynamiquement par chaque switch.
 
 <div align="center">
-<img src="assets/tables_mac.png" alt="Tables MAC" width="500"/>
+<img src="assets/tables_mac.png" alt="Tables MAC" width="400"/>
 </div>
 <br>
 
 **STP désactivé** : Tous les ports passent en état désigné, les boucles ne sont plus gérées.
 
 <div align="center">
-<img src="assets/stp_off.png" alt="STP désactivé" width="700"/>
+<img src="assets/stp_off.png" alt="STP désactivé" width="600"/>
 </div>
 <br>
 
+<!-- |-------------------------------------------------------------------------------------------| -->
+<!-- |                                      INSTALLATION                                         | -->
+<!-- |-------------------------------------------------------------------------------------------| -->
 ## ⚙️ Installation
+
 ### Prérequis
 
 - **GCC** (GNU Compiler Collection)
@@ -108,6 +118,9 @@ make
 ./bin/sae23
 ```
 
+<!-- |-------------------------------------------------------------------------------------------| -->
+<!-- |                                       UTILISATION                                         | -->
+<!-- |-------------------------------------------------------------------------------------------| -->
 ## 🚀 Utilisation
 
 Au lancement, le simulateur demande un fichier de configuration. Des exemples sont disponibles dans le dossier `configs/`.
@@ -125,29 +138,35 @@ Veuillez saisir le nom du fichier : configs/config2.txt
 | 5 | Quitter |
 | 6 | Activer / Désactiver le STP |
 
+<!-- |-------------------------------------------------------------------------------------------| -->
+<!-- |                                      PROTOCOLE STP                                        | -->
+<!-- |-------------------------------------------------------------------------------------------| -->
 ## 🌳 Protocole STP
- 
+
 Le STP (Spanning Tree Protocol) évite les boucles réseau en attribuant un état à chaque port de chaque switch :
- 
+
 | État | Description |
 |------|-------------|
 | ![Racine](https://img.shields.io/badge/RACINE-2e7d32?style=flat-square&logoColor=white) | Port avec le meilleur chemin vers le root bridge |
 | ![Désigné](https://img.shields.io/badge/DÉSIGNÉ-f57f17?style=flat-square&logoColor=white) | Port ouvert, transmet les trames normalement |
 | ![Bloqué](https://img.shields.io/badge/BLOQUÉ-c62828?style=flat-square&logoColor=white) | Port fermé pour couper les boucles |
- 
+
 Le **root bridge** est élu automatiquement : c'est le switch avec la plus petite adresse MAC.
- 
+
+<!-- |-------------------------------------------------------------------------------------------| -->
+<!-- |                                   FORMAT DE CONFIG                                        | -->
+<!-- |-------------------------------------------------------------------------------------------| -->
 ## 📄 Format des fichiers de configuration
- 
+
 ```
 <nb_équipements> <nb_liens>
 2;<MAC>;<nb_ports>;<priorité>     (switch)
 1;<MAC>;<IP>                      (station)
 <idx_a>;<idx_b>;<coût>            (lien)
 ```
- 
+
 ### 💡 Exemple
- 
+
 ```
 4 3
 2;01:45:23:a6:f7:ab;8;1024
@@ -159,13 +178,15 @@ Le **root bridge** est élu automatiquement : c'est le switch avec la plus petit
 0;3;4
 ```
 
-
 | Débit | Coût STP |
 |-------|----------|
 | 10 Mb/s | 100 |
 | 100 Mb/s | 19 |
 | 1 Gb/s | 4 |
 
+<!-- |-------------------------------------------------------------------------------------------| -->
+<!-- |                                    STRUCTURE DU PROJET                                    | -->
+<!-- |-------------------------------------------------------------------------------------------| -->
 ## 📁 Structure du projet
 
 ```
@@ -187,6 +208,9 @@ STP-network-simulator/
 └── Makefile
 ```
 
+<!-- |-------------------------------------------------------------------------------------------| -->
+<!-- |                                       CONTRIBUTEURS                                       | -->
+<!-- |-------------------------------------------------------------------------------------------| -->
 ## 👥 Contributeurs
 
 Travail réalisé en trinôme dans le cadre d'un projet à l'IUT Robert Schuman.
