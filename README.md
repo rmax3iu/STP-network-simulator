@@ -178,11 +178,11 @@ Le **root bridge** est élu automatiquement : c'est le switch avec la plus petit
 0;3;4
 ```
 
-| Débit | Coût STP |
-|-------|----------|
-| 10 Mb/s | 100 |
-| 100 Mb/s | 19 |
-| 1 Gb/s | 4 |
+| Débit  | Coût STP |
+|--------|----------|
+| 10 Mb/s  | 100 |
+| 100 Mb/s  | 19 |
+| 1 Gb/s  | 4 |
 
 <!-- |-------------------------------------------------------------------------------------------| -->
 <!-- |                                    STRUCTURE DU PROJET                                    | --> 
