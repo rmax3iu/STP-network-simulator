@@ -185,7 +185,7 @@ Le **root bridge** est élu automatiquement : c'est le switch avec la plus petit
 | 1 Gb/s | 4 |
 
 <!-- |-------------------------------------------------------------------------------------------| -->
-<!-- |                                    STRUCTURE DU PROJET                                    | -->
+<!-- |                                    STRUCTURE DU PROJET                                    | --> 
 <!-- |-------------------------------------------------------------------------------------------| -->
 ## 📁 Structure du projet
 
