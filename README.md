@@ -40,6 +40,7 @@ Le simulateur implémente :
 <!-- |-------------------------------------------------------------------------------------------| -->
 ## 📸 Aperçu
 
+
 **Menu principal** : Interface de démarrage du simulateur avec les 6 options disponibles.
 
 <div align="center">
