@@ -20,13 +20,17 @@
 </p>
 
 <!-- |-------------------------------------------------------------------------------------------| -->
+<!-- |                                    TECHNOLOGIES                                           | -->
+<!-- |-------------------------------------------------------------------------------------------| -->
+## Technologies utilisées
+
+![C](https://img.shields.io/badge/C-00599C?logo=c&logoColor=white&style=for-the-badge) ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?logo=visualstudiocode&logoColor=white&style=for-the-badge) ![GitLab](https://img.shields.io/badge/GitLab-FC6D26?logo=gitlab&logoColor=white&style=for-the-badge) ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=for-the-badge) ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black&style=for-the-badge) 
+<!-- |-------------------------------------------------------------------------------------------| -->
 <!-- |                                       À PROPOS                                            | -->
 <!-- |-------------------------------------------------------------------------------------------| -->
 ## À propos du projet
 
 Ce simulateur permet de modéliser et de simuler le comportement d'un réseau local composé de stations et de commutateurs. Il a été réalisé dans le cadre d'un projet à l'IUT Robert Schuman.
-
-[![Language: C](https://img.shields.io/badge/Language-C-blue.svg)](https://www.cprogramming.com/)
 
 Le simulateur implémente :
 - Le protocole **STP** pour éviter les boucles réseau par échange de BPDU
