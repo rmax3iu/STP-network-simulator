@@ -20,13 +20,18 @@
 </p>
 
 <!-- |-------------------------------------------------------------------------------------------| -->
+<!-- |                                    TECHNOLOGIES                                           | -->
+<!-- |-------------------------------------------------------------------------------------------| -->
+## Technologies used
+
+![C](https://img.shields.io/badge/C-00599C?logo=c&logoColor=white&style=for-the-badge) ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?logo=visualstudiocode&logoColor=white&style=for-the-badge) ![GitLab](https://img.shields.io/badge/GitLab-FC6D26?logo=gitlab&logoColor=white&style=for-the-badge) ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=for-the-badge) ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black&style=for-the-badge) 
+
+<!-- |-------------------------------------------------------------------------------------------| -->
 <!-- |                                       ABOUT                                               | -->
 <!-- |-------------------------------------------------------------------------------------------| -->
 ## About the project
 
 This simulator allows you to model and simulate the behavior of a local area network (LAN) composed of stations and switches. It was developed as part of a project at IUT Robert Schuman.
-
-[![Language: C](https://img.shields.io/badge/Language-C-blue.svg)](https://www.cprogramming.com/)
 
 The simulator implements :
 - The **STP** protocol to prevent network loops through BPDU exchange
@@ -192,19 +197,19 @@ The **root bridge** is elected automatically : it is the switch with the smalles
 ```
 STP-network-simulator/
 ├── src/
-│   ├── main.c          # Entry point and menu
-│   ├── stp.c / stp.h   # STP protocol and scheduler
-│   ├── reseau.c / .h   # Network structure and management
-│   ├── switch.c / .h   # Switch and MAC table
-│   ├── station.c / .h  # Station (MAC + IP)
-│   ├── ethernet.c / .h # Ethernet frame
-│   ├── config.c / .h   # Configuration file reader
-│   ├── matrice.c / .h  # Adjacency matrix
-│   ├── adresse.c / .h  # MAC and IPv4 types
-│   └── utils.c / .h    # Utility functions
-├── configs/            # Network configuration files
-├── assets/             # Screenshots
-├── docs/               # Documentation and subject
+│   ├── main.c             # Entry point and menu
+│   ├── stp.c / stp.h      # STP protocol and scheduler
+│   ├── reseau.c / .h      # Network structure and management
+│   ├── switch.c / .h      # Switch and MAC table
+│   ├── station.c / .h     # Station (MAC + IP)
+│   ├── ethernet.c / .h    # Ethernet frame
+│   ├── config.c / .h      # Configuration file reader
+│   ├── matrice.c / .h     # Adjacency matrix
+│   ├── adresse.c / .h     # MAC and IPv4 types
+│   └── utils.c / .h       # Utility functions
+├── configs/               # Network configuration files
+├── assets/                # Screenshots
+├── docs/                  # Documentation and subject
 └── Makefile
 ```
 
