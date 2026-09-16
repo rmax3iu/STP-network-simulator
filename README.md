@@ -25,6 +25,7 @@
 ## Technologies utilisées
 
 ![C](https://img.shields.io/badge/C-00599C?logo=c&logoColor=white&style=for-the-badge) ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?logo=visualstudiocode&logoColor=white&style=for-the-badge) ![GitLab](https://img.shields.io/badge/GitLab-FC6D26?logo=gitlab&logoColor=white&style=for-the-badge) ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=for-the-badge) ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black&style=for-the-badge) 
+
 <!-- |-------------------------------------------------------------------------------------------| -->
 <!-- |                                       À PROPOS                                            | -->
 <!-- |-------------------------------------------------------------------------------------------| -->
@@ -197,19 +198,19 @@ Le **root bridge** est élu automatiquement : c'est le switch avec la plus petit
 ```
 STP-network-simulator/
 ├── src/
-│   ├── main.c          # Point d'entrée et menu
-│   ├── stp.c / stp.h   # Protocole STP et ordonnanceur
-│   ├── reseau.c / .h   # Structure et gestion du réseau
-│   ├── switch.c / .h   # Commutateur et table MAC
-│   ├── station.c / .h  # Station (MAC + IP)
-│   ├── ethernet.c / .h # Trame Ethernet
-│   ├── config.c / .h   # Lecture des fichiers de configuration
-│   ├── matrice.c / .h  # Matrice d'adjacence
-│   ├── adresse.c / .h  # Types MAC et IPv4
-│   └── utils.c / .h    # Fonctions utilitaires
-├── configs/            # Fichiers de configuration réseau
-├── assets/             # Screenshots
-├── docs/               # Documentation et sujet
+│   ├── main.c             # Point d'entrée et menu
+│   ├── stp.c / stp.h      # Protocole STP et ordonnanceur
+│   ├── reseau.c / .h      # Structure et gestion du réseau
+│   ├── switch.c / .h      # Commutateur et table MAC
+│   ├── station.c / .h     # Station (MAC + IP)
+│   ├── ethernet.c / .h    # Trame Ethernet
+│   ├── config.c / .h      # Lecture des fichiers de configuration
+│   ├── matrice.c / .h     # Matrice d'adjacence
+│   ├── adresse.c / .h     # Types MAC et IPv4
+│   └── utils.c / .h       # Fonctions utilitaires
+├── configs/               # Fichiers de configuration réseau
+├── assets/                # Screenshots
+├── docs/                  # Documentation et sujet
 └── Makefile
 ```
 
